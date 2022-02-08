@@ -1,0 +1,156 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html {
+    background-image: linear-gradient(120deg, #89a7eb 0%, #ec6e72 100%);
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fccb90;
+}
+
+h1 {
+    background-image: linear-gradient(120deg, #f79598 0%, #c1d3ff 100%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+#container {
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0vh;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*timers*/
+.label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#work {
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+#break {
+    grid-area: 1 / 4 / 1 / 4;
+}
+
+#cycles {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+.timer {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 2rem;
+    color: white;
+}
+
+#w_minutes {
+    padding-left: 0.5rem;
+}
+
+#w_seconds {
+    padding-right: 0.5rem;
+}
+
+#b_minutes {
+    padding-left: 0.4rem;
+}
+
+#b_seconds {
+    padding-right: 0.5rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+    color: whitesmoke;
+}
+
+#work-timer {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+/*buttons*/
+
+.btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 10px;
+
+    width: 1.7rem;
+    height: 1.7rem;
+
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+#pause {
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+
+
+.desc {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    padding: 1rem;
+    width: auto;
+    opacity: 0.7;
+    color: white;
+    font-size: 1.0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}

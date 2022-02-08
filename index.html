@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+    </header>
+    <p class="desc">
+        1. Decide on the task to be done.
+        <br> 2. Set the pomodoro timer.
+        <br> 3. Work on the task.
+        </br>4. End work when the timer rings and take a short break.
+        <br> 5. After three pomodoros are done, take the fourth pomodoro and then take a long break. Once the long break
+        is finished, return to step 2.</p>
+    <div id="container">
+
+        <p id="work" class="label">Work:</p>
+        <p id="cycles" class="label">Cycles:</p>
+        <p id="break" class="label">Break:</p>
+        <div id="work-timer" class="timer">
+            <button class="btn" id="subtractTimeW"><i class="fa-solid fa-minus"></i></button>
+            <p id="w_minutes">0</p>
+            <p class="semicolon">:</p>
+            <p id="w_seconds">00</p><button class="btn" id="addTimeW"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <p id="counter" class="timer">3
+        </p>
+
+        <div id="break-timer" class="timer">
+            <button class="btn" id="subtractTimeB"><i class="fa-solid fa-minus"></i></button>
+            <p id="b_minutes">0</p>
+            <p class="semicolon">:</p>
+            <p id="b_seconds">10</p> <button class="btn" id="addTimeB"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <button id="start" class="btn"><i class="fa-solid fa-play"></i></button>
+        <button id="reset" class="btn"><i class="fa-solid fa-arrow-rotate-left"></i></button> 
+        <button id="pause" class="btn"><i
+                class="fa-solid fa-pause"></i></button>
+
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
